@@ -26,4 +26,4 @@ A machine learning project to predict cardiovascular disease risk using patient 
 git clone https://github.com/mchandhan/Cardiovascular-Disease-Prediction.git
 cd Cardiovascular-Disease-Prediction-main
 pip install -r requirements.txt
-python src/train.py
+python backend/train.py
