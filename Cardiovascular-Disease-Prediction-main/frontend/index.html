@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardiovascular Disease Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Cardiovascular Disease Prediction</h1>
+    <p class="subtitle">
+      Machine Learning based health risk assessment system
+    </p>
+
+    <div class="card">
+
+      <div class="form-grid">
+        <input id="age" type="number" placeholder="Age (years)">
+
+        <select id="gender" title="Gender">
+          <option value="">Gender</option>
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
+
+        <input id="height" type="number" placeholder="Height (cm)">
+        <input id="weight" type="number" placeholder="Weight (kg)">
+        <input id="ap_hi" type="number" placeholder="Systolic BP">
+        <input id="ap_lo" type="number" placeholder="Diastolic BP">
+
+        <select id="cholesterol" title="Cholesterol">
+          <option value="">Cholesterol</option>
+          <option value="1">Normal</option>
+          <option value="2">Above Normal</option>
+          <option value="3">Well Above Normal</option>
+        </select>
+
+        <select id="gluc" title="Glucose">
+          <option value="">Glucose</option>
+          <option value="1">Normal</option>
+          <option value="2">Above Normal</option>
+          <option value="3">Well Above Normal</option>
+        </select>
+
+        <select id="active" title="Physically Active?">
+          <option value="">Physically Active?</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+
+        <select id="smoke" title="Smoking?">
+          <option value="">Smoking?</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+
+        <select id="alco" title="Alcohol Intake?">
+          <option value="">Alcohol Intake?</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <button onclick="predict()">Predict Risk</button>
+
+      <h3 id="result"></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

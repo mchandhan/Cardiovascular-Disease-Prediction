@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #3a10e1;
+  color: #fbfcfc;
+}
+
+/* Page container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #fffdfde2;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* GRID LAYOUT */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Inputs */
+input,
+select {
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #d6e0e5;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #020202;
+}
+
+/* Button */
+button {
+  margin-top: 30px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 30px;
+  background: #3a10e1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #203a43;
+}
+
+/* Result */
+#result {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
